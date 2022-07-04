@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+/* Maneira de mudar a cor da  página toda*/
+body{
+    background: rgb(232, 175, 230);
+}
+
+#container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+#container > header {
+    background: rgb(232, 175, 230) ;
+    text-align: center;
+    padding: 1rem;
+}
+/* Onde estão as fotos dos produtos*/
+main{
+    background: white;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+/* NAV - Informações do site */
+nav{
+    background: #d84c72;;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    /*color: #ecedea;*/
+    color: white;
+    border-right: 1px solid #d4e4ef;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    /*color: #ecedea;*/
+    color: white;
+    padding: 15px;
+}
+/* Mudar a cor das letras ao passar o mouse em cima*/
+
+nav a:hover{
+    color: rgb(95, 75, 113);
+}
+ header:hover{
+    color: rgb(95, 75, 113);
+}
+.produto p:hover{
+
+ color: rgb(95, 75, 113);
+}
+header{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+/* MAIN */
+main > header{
+    color: #d84c72;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    font-style: italic;    
+}
+/* Separar a colona dos produtos/ cursor: pointer Faz colocar a mãozinha quando o mouse esta em cima do produto.*/
+.produto{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+/* Afastar os produtos do menu*/
+.produto{
+    margin-top: 20px;
+}
+
+/* colocar a borda ao redor do produto*/
+.produto {
+    border: 1px solid #d84c72 ;
+}
+
+
+/* Background-color:colocar uma pequena borda sobre os nomes dos sabores/ Color:colocar cor nas letras dos sabores/ Padding: separar os nomes do canto da borda/ Font-family: mudar o tipo das letras dos sabores. */
+.produto p{
+    background: #d84c72;
+    color:  whitesmoke;
+    padding: 5px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Efeito que ao passar o mouse por cima do nome do sabor do produto vai da um efeito de mexer a bordinha cor de rosa. Envolvendo todos os nomes q estão na tag "P". Rotacionar no sentido horario.*/
+.produto p:hover{
+    transform: rotate(-2deg);
+}
+/* Colocar os produtos em baixo um do outro*/
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Rodapé do site*/
+footer {
+    background: #bc697f;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+footer{
+    background-color: #bc697f;
+    padding: 50px 0;
+}
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    /*display: inline-flex;*/
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    width: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.medias-socias img{
+     border: 1px solid white;
+}
+.footer-col .medias-socias img /*a i*/{
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+
+.footer-col .medias-socias img:hover{
+    color: #bc697f;
+    background-color: white;
+}
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #bc697f;
+}
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #bc697f;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+}
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
